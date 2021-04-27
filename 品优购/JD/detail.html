@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./detail.css">
+    <title>详情页</title>
+
+</head>
+
+<body>
+    <div class="box1">
+        <div class="login">欢迎来到品优购！请登录<a href="javascript:;">免费注册</a></div>
+        <div class="topnav">
+            <a href="">我的订单</a>|
+            <a href="">我的品优购</a>|
+            <a href="">品优购会员</a>|
+            <a href="">企业采购</a>|
+            <a href="">关注品优购</a>|
+            <a href="">客户服务</a>|
+            <a href="">网站导航</a>
+        </div>
+    </div>
+
+    <div class="head">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="search">
+            <input type="text"><button>搜索</button><br>
+            <a href="">优惠购首发</a>
+            <a href="">亿元优惠</a>
+            <a href="">9.9元团购</a>
+            <a href="">满99减30</a>
+            <a href="">办公用品</a>
+            <a href="">电脑</a>
+            <a href="">通信</a>
+        </div>
+        <div class="car">
+            <button>我的购物车  ></button>
+        </div>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><button>全部商品分类</button></li>
+            <li>服装城</li>
+            <li>美妆馆</li>
+            <li>传智超市</li>
+            <li>全球购</li>
+            <li>闪购</li>
+            <li>团购</li>
+            <li>拍卖</li>
+            <li>有趣</li>
+        </ul>
+    </div>
+
+    <div class="box4">
+        <div class="show">
+
+            <div>
+                <a href="">手机、数码、通信></a>
+                <a href="">手机></a>
+                <a href="">Apple苹果></a>
+                <a href="">iphon 6S Plus系列></a>
+            </div>
+            <div class="phone">
+                <img src="./upload/s3.png" alt="">
+                <div class="mask"></div>
+            </div>
+
+
+            <div class="big">
+                <img src="./upload/s3.png" alt="" class="bigImg">
+            </div>
+            <script>
+                var small = document.querySelector('.phone');
+                var mask = document.querySelector('.mask');
+                var big = document.querySelector('.big');
+                var bigImg = document.querySelector('.bigImg');
+
+                // small.addEventListener('mouseover', function(e) {
+                small.addEventListener('mousemove', function(e) {
+                    big.style.display = 'block';
+                    // mask.style.display = 'block';
+                    mask.style.left = e.pageX - this.offsetLeft - mask.offsetWidth / 2 + 'px'; //鼠标在盒子内的坐标就是mask定位的left值
+                    mask.style.top = e.pageY - this.offsetTop - mask.offsetHeight / 2 + 'px';
+                    //大盒子移动距离/大盒子最大移动距离=mask移动距离/mask最大移动距离
+                    //最大移动距离=父盒子宽度-子盒子宽度
+                    bigImg.style.left = -(e.pageX - this.offsetLeft) / (small.offsetWidth - mask.offsetWidth) * (bigImg.offsetWidth - big.offsetWidth) + 'px';
+                    bigImg.style.top = -(e.pageY - this.offsetTop) / (small.offsetHeight - mask.offsetHeight) * (bigImg.offsetHeight - big.offsetHeight) + 'px';
+                    // bigImg.style.left = -(e.pageX - this.offsetLeft) / 150 * 400 + 'px';
+                    // bigImg.style.top = -(e.pageY - this.offsetTop) / 150 * 400 + 'px';
+                    if (e.pageX - this.offsetLeft < 0) { //< mask.offsetWidth/2 更好
+                        mask.style.left = 0 + 'px';
+                    }
+                    if (e.pageX - this.offsetLeft > small.offsetWidth - mask.offsetWidth) {
+                        mask.style.left = small.offsetWidth - mask.offsetWidth + 'px';
+                    }
+                    if (e.pageY - this.offsetTop > small.offsetHeight - mask.offsetHeight) {
+                        mask.style.top = small.offsetHeight - mask.offsetHeight + 'px';
+                    }
+                    if (e.pageY - this.offsetTop < 0) { //< mask.offsetHeight/2 更好
+                        mask.style.top = 0 + 'px';
+                    }
+
+
+                })
+
+                small.onmouseout = function() {
+                        big.style.display = 'none';
+                        mask.style.display = 'none';
+                    }
+                    // })
+            </script>
+            <div class="flue">
+                <ul>
+                    <li class="arrow">
+                        <a href=""><img src="./img/arrow-prev.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./upload/pre.jpg" alt=""></a>
+                    </li>
+                    <li class="current">
+                        <a href=""><img src="./upload/pre.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./upload/pre.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./upload/pre.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./upload/pre.jpg" alt=""></a>
+                    </li>
+                    <li class="arrow">
+                        <a href=""><img src="./img/arrow-next.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="msg">
+            <h3>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机</h3>
+            <h5>推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</h5>
+            <div>
+
+            </div>
+            <div>
+                <dl class="dl1">
+                    <dt>价格</dt>
+                    <dd>
+                        <i>￥5200.00</i>
+                        <a href="">降价通知</a>
+                        <div>累计评价2378783</div>
+                    </dd>
+                </dl>
+                <dl class="dl2">
+                    <dt>促销</dt>
+                    <dd>
+                        <button>加购价</button> 满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换 购热销商品 详情 >>
+                    </dd>
+                </dl>
+                <dl class="dl3">
+                    <dt>支持</dt>
+                    <dd>以旧换新，闲置手机回收 4G套餐超值抢 礼品购</dd>
+                </dl>
+                <dl>
+                    <dt>选择颜色</dt>
+                    <dd>
+                        <button class="current">玫瑰金</button>
+                        <button>金色</button>
+                        <button>白色</button>
+                        <button>土豪金</button>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>选择版本</dt>
+                    <dd>
+                        <button class="current">公开版</button>
+                        <button>移动4G</button>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购买方式</dt>
+                    <dd>
+                        <button class="current">官方标配</button>
+                        <button>移动优惠购</button>
+                        <button>电信优惠购</button>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <button class="num">-</button>
+                <input type="text" value="1">
+                <button class="num">+</button>
+                <button class="addcar">加入购物车</button>
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="left">
+            <div class="left1">
+                <ul>
+                    <li>相关分类</li>
+                    <li class="currentbg2">推荐品牌</li>
+
+                </ul>
+            </div>
+            <div class="left2">
+                <ul>
+                    <li><img src="./upload/aside_img.jpg" alt="">
+                        <i>华为 HUAWEI P20 Pro 全面屏徕卡</i>
+                        <p>￥4399</p>
+                        <button>加入购物车</button></li>
+                    <li><img src="./upload/aside_img.jpg" alt="">
+                        <i>华为 HUAWEI P20 Pro 全面屏徕卡</i>
+                        <p>￥4399</p>
+                        <button>加入购物车</button></li>
+                    <li><img src="./upload/aside_img.jpg" alt="">
+                        <i>华为 HUAWEI P20 Pro 全面屏徕卡</i>
+                        <p>￥4399</p>
+                        <button>加入购物车</button></li>
+                    <li><img src="./upload/aside_img.jpg" alt="">
+                        <i>华为 HUAWEI P20 Pro 全面屏徕卡</i>
+                        <p>￥4399</p>
+                        <button>加入购物车</button></li>
+                    <li><img src="./upload/aside_img.jpg" alt="">
+                        <i>华为 HUAWEI P20 Pro 全面屏徕卡</i>
+                        <p>￥4399</p>
+                        <button>加入购物车</button></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="right">
+            <div class="right1">
+                <ul>
+                    <li class="currentbg1">商品介绍</li>
+                    <li>规格与包装</li>
+                    <li>售后保障</li>
+                    <li>商品评价（50000+）</li>
+                    <li>手机社区</li>
+                </ul>
+            </div>
+
+            <div class="right2">
+                <ul>
+                    <li>分辨率：1920*1080(FHD)</li>
+                    <li>后置摄像头：1200万像素</li>
+                    <li>前置摄像头：500万像素</li>
+                    <li>核 数：其他</li>
+                    <li>频 率：以官网信息为准</li>
+                    <li>品牌： Apple ♥关注</li>
+                    <li>商品名称：APPLEiPhone 6s Plus</li>
+                    <li>商品编号：1861098</li>
+                    <li>商品毛重：0.51kg</li>
+                    <li>商品产地：中国大陆</li>
+                    <li>热点：指纹识别，Apple Pay，金属机身，拍照神器</li>
+                    <li>系统：苹果（IOS）</li>
+                    <li>像素：1000-1600万</li>
+                    <li>机身内存：64GB</li>
+                </ul>
+            </div>
+            <p>查看更多参数></p>
+            <img src="./upload/detail_img1.jpg" alt="">
+            <img src="./upload/detail_img2.jpg" alt="">
+            <img src="./upload/detail_img3.jpg" alt="">
+
+        </div>
+    </div>
+
+    <div class="box8">
+        <ul>
+            <li>
+                <i></i>
+                <div>
+                    <h5>正品保障</h5>
+                    <p>正品保障，假一赔十</p>
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div>
+                    <h5>正品保障</h5>
+                    <p>正品保障，假一赔十</p>
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div>
+                    <h5>正品保障</h5>
+                    <p>正品保障，假一赔十</p>
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div>
+                    <h5>正品保障</h5>
+                    <p>正品保障，假一赔十</p>
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div>
+                    <h5>正品保障</h5>
+                    <p>正品保障，假一赔十</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+        <div>
+            <ul>
+                <li>
+                    <h4>购物指南</h4>
+                    <a href="">购物流程</a>
+                    <a href="">会员介绍</a>
+                    <a href="">生活旅行</a>
+                    <a href="">常见问题</a>
+                    <a href="">大家电</a>
+                    <a href="">联系客服</a>
+                </li>
+                <li>
+                    <h4>购物指南</h4>
+                    <a href="">购物流程</a>
+                    <a href="">会员介绍</a>
+                    <a href="">生活旅行</a>
+                    <a href="">常见问题</a>
+                    <a href="">大家电</a>
+                    <a href="">联系客服</a>
+                </li>
+                <li>
+                    <h4>购物指南</h4>
+                    <a href="">购物流程</a>
+                    <a href="">会员介绍</a>
+                    <a href="">生活旅行</a>
+                    <a href="">常见问题</a>
+                    <a href="">大家电</a>
+                    <a href="">联系客服</a>
+                </li>
+                <li>
+                    <h4>购物指南</h4>
+                    <a href="">购物流程</a>
+                    <a href="">会员介绍</a>
+                    <a href="">生活旅行</a>
+                    <a href="">常见问题</a>
+                    <a href="">大家电</a>
+                    <a href="">联系客服</a>
+                </li>
+                <li>
+                    <h4>购物指南</h4>
+                    <a href="">购物流程</a>
+                    <a href="">会员介绍</a>
+                    <a href="">生活旅行</a>
+                    <a href="">常见问题</a>
+                    <a href="">大家电</a>
+                    <a href="">联系客服</a>
+                </li>
+                <li>
+                    <h5>帮助中心</h5>
+                    <img src="./upload/erweima.png" alt="">
+                    <h6>扫描二维码获取更多</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <div>
+                <a href="">关于我们</a>|
+                <a href="">联系我们</a>|
+                <a href="">联系客服</a>|
+                <a href="">商家入驻</a>|
+                <a href="">营销中心</a>|
+                <a href="">手机品优购</a>|
+                <a href="">友情链接</a>|
+                <a href="">销售联盟</a>|
+                <a href="">品优购社区</a>|
+                <a href="">品优购公益</a>|
+                <a href="">English Site</a>|
+                <a href="">Contact U</a>
+
+            </div>
+            <div>
+                <p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
+            </div>
+            <div>
+                <p> 京ICP备08001421号京公网安备110108007702</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

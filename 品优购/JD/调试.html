@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <title>Document</title>
+    <style>
+        .left {
+            float: left;
+            background-color: red;
+            width: 200px;
+        }
+        
+        .swiper {
+            float: left;
+            background-color: tomato;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box4">
+        <div class="left">
+            <div>全部商品分类</div>
+            <ul>
+                <li>
+                    <a href="#">家用电器</a><i>></i>
+                </li>
+                <li>
+                    <a href="#">手机</a>
+                    <a href="#">数码</a>
+                    <a href="#">通信</a><i>></i>
+                </li>
+                <li><a href="#">电脑、办公</a></li><i>></i>
+                <li><a href="#">家居、家居、家装、厨具</a></li><i>></i>
+                <li><a href="#">男装、女装、童装、内衣</a></li><i>></i>
+                <li><a href="#">个护化妆、清洁用品、宠物</a></li><i>></i>
+                <li><a href="#">鞋靴、箱包、珠宝、奢侈品</a></li><i>></i>
+                <li><a href="#">运动户外、钟表</a></li><i>></i>
+                <li><a href="#">汽车、汽车用品</a></li><i>></i>
+                <li><a href="#">母婴、玩具乐器</a></li><i>></i>
+                <li><a href="#">食品、酒类、生鲜、特产</a></li><i>></i>
+                <li><a href="#">医药保健</a></li><i>></i>
+                <li><a href="#">图书、音像、电子书</a></li><i>></i>
+                <li><a href="#">彩票、旅行、充值、票务</a></li><i>></i>
+                <li><a href="#">理财、众筹、白条、保险</a></li><i>></i>
+            </ul>
+        </div>
+        <div class="swiper">
+            <!-- Swiper 轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="./swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+
+        </div>
+        <div class="right"></div>
+    </div>
+
+
+</body>
+
+</html>

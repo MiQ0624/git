@@ -1,0 +1,434 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: red;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    body {
+        margin: 0 auto;
+        min-width: 320px;
+        max-width: 1200px;
+        /* background-color: aqua; */
+        font-size: 16px;
+        /* font-family: ; */
+        /* line-height: 1.5; */
+        color: #666;
+    }
+    
+    .box1 {
+        height: 31px;
+        line-height: 31px;
+        background-color: #f1f1f1;
+        padding-left: 10px;
+    }
+    
+    .login {
+        float: left;
+        width: 200px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .topnav {
+        float: right;
+        width: 450px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .topnav a {
+        margin-right: 5px;
+    }
+    
+    .head {
+        height: 80px;
+    }
+    
+    .head a {
+        font-size: 14px;
+    }
+    
+    .logo {
+        float: left;
+        margin-top: 20px;
+    }
+    
+    .logo img {
+        margin-right: 150px;
+    }
+    
+    .search {
+        float: left;
+    }
+    
+    .search input {
+        height: 32px;
+        width: 460px;
+        border: 2px solid #b1191a;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    .search a {
+        margin-left: 10px;
+    }
+    
+    .search button {
+        width: 82px;
+        height: 36px;
+        color: #fdf4f8;
+        background-color: #b1191a;
+        border: 0;
+        vertical-align: bottom;
+    }
+    
+    .car {
+        float: right;
+        margin-right: 20px;
+    }
+    
+    .car button {
+        width: 138px;
+        height: 50px;
+        border: 0;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    .nav {
+        margin: 0 auto;
+        width: 800px;
+        height: 40px;
+        border-bottom: 3px solid #b1191a;
+    }
+    
+    .nav li {
+        float: left;
+        margin-left: 44px;
+        font-size: 18px;
+    }
+    
+    .box4 {
+        width: 1200px;
+        height: 460px;
+        margin-top: 10px;
+    }
+    
+    .left {
+        float: left;
+        width: 209px;
+    }
+    
+    .box4 .left div {
+        background-color: #b1191a;
+        height: 65px;
+        width: 209px;
+        color: azure;
+        text-align: center;
+        line-height: 65px;
+        font-size: 16px;
+    }
+    
+    .box4 .left li {
+        height: 26px;
+        list-style: none;
+        background-color: #c81623;
+    }
+    
+    .box4 .left a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: azure;
+        font-size: 12px;
+    }
+    
+    .box4 .left b {
+        color: azure;
+        float: right;
+        margin-right: 15px;
+    }
+    /* Swiper 轮播图 */
+    
+    .swiper-container {
+        float: left;
+        height: 455px;
+        width: 721px;
+    }
+    
+    .swiper-wrapper img {
+        width: 721px;
+        height: 455px;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .box4 .right {
+        margin-left: 5px;
+        float: left;
+        height: 455px;
+        width: 260px;
+        border: 1px solid #e5e5e5;
+    }
+    
+    .box4 .right .sp {
+        padding: 6px;
+        padding-top: 1px;
+        border: 1px solid #e5e5e5;
+        margin: -1px;
+    }
+    
+    .box4 .right .spa {
+        float: right;
+    }
+    
+    .icon {
+        width: 250;
+        height: 250;
+    }
+    
+    .right .icon li {
+        list-style: none;
+        float: left;
+        height: 66px;
+        width: 62px;
+        border: 1px solid #e5e5e5;
+    }
+    
+    .right .icon i {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 10px auto;
+    }
+    
+    .right .icon a {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .right .icon1 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -17px -16px;
+    }
+    
+    .right .icon2 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -78px -16px;
+    }
+    
+    .right .icon3 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -140px -16px;
+    }
+    
+    .right .icon4 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -205px -16px;
+    }
+    
+    .right .icon5 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -17px -90px;
+    }
+    
+    .right .icon6 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -78px -16px;
+    }
+    
+    .right .icon7 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -140px -16px;
+    }
+    
+    .right .icon8 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -205px -90px;
+    }
+    
+    .right .icon9 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -17px -160px;
+    }
+    
+    .right .icon10 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -78px -160px;
+    }
+    
+    .right .icon11 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -140px -160px;
+    }
+    
+    .right .icon12 {
+        background: url(./img/icons.png) no-repeat;
+        background-position: -205px -160px;
+    }
+    
+    .right img {
+        width: 260px;
+        height: 76px;
+    }
+    /* box5 */
+    
+    .box5 {
+        height: 165px;
+        width: 1200px;
+    }
+    
+    .box5 li {
+        width: 236px;
+        height: 143px;
+        float: left;
+        list-style: none;
+        border: 1px solid #e5e5e5;
+    }
+    
+    .box5 .hot {
+        text-align: center;
+        background-color: #5c5251;
+    }
+    
+    .box5 .hot img {
+        margin-top: 30px;
+    }
+    /* box 6 */
+    
+    .box6 {
+        height: 420px;
+        width: 1200px;
+    }
+    
+    .title {
+        height: 30px;
+        border-bottom: 2px solid red;
+    }
+    
+    .box6 .title p {
+        float: left;
+        color: #c81623;
+    }
+    
+    .box6 .title a {
+        float: right;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .box6 ul li {
+        float: left;
+    }
+    
+    .box6 .w1 {
+        width: 209px;
+    }
+    
+    .box6 .w1 li {
+        width: 86px;
+        height: 32px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 32px;
+    }
+    
+    .box6 .w3,
+    .w5 {
+        width: 217px;
+    }
+    
+    .box6 .w3 img,
+    .box6 .w5 img {
+        width: 217px;
+    }
+    /* box8 */
+    
+    .box8 {
+        height: 100px;
+        width: 1200px;
+    }
+    
+    .box8 li {
+        float: left;
+        height: 80px;
+        width: 240px;
+    }
+    
+    .box8 i {
+        float: left;
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url(./img/icons.png) no-repeat;
+        background-position: -253px -3px;
+    }
+    
+    .box8 div {
+        float: left;
+        margin-left: 5px;
+    }
+    
+    .foot>div:first-child {
+        width: 1160px;
+        height: 180px;
+        border: 1px solid #e3e3e3;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    
+    .foot li {
+        float: left;
+        width: 180px;
+        height: 200px;
+    }
+    
+    .foot li a {
+        display: block;
+    }
+    
+    .foot li:last-child {
+        padding-top: 20px;
+    }
+    
+    .foot a {
+        font-size: 14px;
+    }
+    
+    .foot .contact {
+        margin-top: 50px;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .foot .contact p {
+        margin-top: 20px;
+    }

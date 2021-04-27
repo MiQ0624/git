@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1200px;
+    /* background-color: aqua; */
+    font-size: 16px;
+    /* font-family: ; */
+    color: #666;
+}
+
+.box1 {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+
+.login {
+    float: left;
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.topnav {
+    float: right;
+    width: 450px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.topnav a {
+    margin-right: 5px;
+}
+
+.head {
+    height: 80px;
+}
+
+.head a {
+    font-size: 14px;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+
+.logo img {
+    margin-right: 150px;
+}
+
+.search {
+    float: left;
+}
+
+.search input {
+    height: 32px;
+    width: 460px;
+    border: 2px solid #b1191a;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.search a {
+    margin-left: 10px;
+}
+
+.search button {
+    width: 82px;
+    height: 36px;
+    color: #fdf4f8;
+    background-color: #b1191a;
+    border: 0;
+    vertical-align: bottom;
+}
+
+.car {
+    float: right;
+    margin-right: 20px;
+}
+
+.car button {
+    width: 138px;
+    height: 50px;
+    border: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+/* 导航栏 */
+
+.nav {
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav a {
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-left: 35px;
+    color: #000000;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.list {
+    width: 1200px;
+    height: 1500px;
+}
+
+.list li {
+    float: left;
+    width: 288px;
+    height: 458px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border: 1px solid red;
+}
+
+
+/* li:hover {
+    border: 1px solid red;
+} */
+
+.list a {
+    display: block;
+    margin-bottom: 10px;
+    color: #7f6666;
+    font-size: 14px;
+}
+
+.list a h4 {
+    margin: 10px;
+}
+
+.list em {
+    font-size: 20px;
+    color: red;
+}
+
+.list button {
+    background-color: #b1191a;
+    width: 289px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    margin-top: 6px;
+}
+
+.list .outer {
+    display: inline-block;
+    height: 10px;
+    width: 115px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.list .inner {
+    float: left;
+    width: 87%;
+    height: 10px;
+    background-color: red;
+}
+
+.pages {
+    height: 40px;
+    width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pages .page0 {
+    width: 83px;
+    height: 36px;
+}
+
+.pages .page {
+    width: 36px;
+    height: 36px;
+}
+
+.pages input {
+    height: 38px;
+    width: 48px;
+}
+
+.pages>button:last-child {
+    height: 34px;
+    width: 52px;
+}
+
+
+/* 尾部 */
+
+.box8 {
+    height: 100px;
+    width: 1200px;
+}
+
+.box8 li {
+    float: left;
+    height: 80px;
+    width: 240px;
+}
+
+.box8 i {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(./img/icons.png) no-repeat;
+    background-position: -253px -3px;
+}
+
+.box8 div {
+    float: left;
+    margin-left: 5px;
+}
+
+.foot>div:first-child {
+    width: 1160px;
+    height: 180px;
+    border: 1px solid #e3e3e3;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.foot li {
+    float: left;
+    width: 180px;
+    height: 200px;
+}
+
+.foot li a {
+    display: block;
+}
+
+.foot li:last-child {
+    padding-top: 20px;
+}
+
+.foot a {
+    font-size: 14px;
+}
+
+.foot .contact {
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.foot .contact p {
+    margin-top: 20px;
+}
